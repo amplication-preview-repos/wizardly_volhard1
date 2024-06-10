@@ -3,6 +3,8 @@ import { QuizModule } from "./quiz/quiz.module";
 import { QuestionModule } from "./question/question.module";
 import { AdminModule } from "./admin/admin.module";
 import { UserModule } from "./user/user.module";
+import { StaticFilesModule } from "./StaticFiles/staticfiles.module";
+import { StaticFilesProviderModule } from "./StaticFilesProvider/staticfilesprovider.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -19,6 +21,8 @@ import { ApolloDriver, ApolloDriverConfig } from "@nestjs/apollo";
     QuestionModule,
     AdminModule,
     UserModule,
+    StaticFilesModule,
+    StaticFilesProviderModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
